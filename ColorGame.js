@@ -12,6 +12,7 @@ var resetButton = document.querySelector("#reset");
 var easyButton = document.querySelector("#easy");
 var hardButton = document.querySelector("#hard");
 
+// easy mode button
 easyButton.addEventListener("click", function(){
 		hardButton.classList.remove("selected");
 		easyButton.classList.add("selected");
@@ -30,6 +31,8 @@ easyButton.addEventListener("click", function(){
 
 })
 
+
+// Hard mode button
 hardButton.addEventListener("click", function(){
 		hardButton.classList.add("selected");
 		easyButton.classList.remove("selected");
@@ -47,6 +50,7 @@ hardButton.addEventListener("click", function(){
 
 colorDisplay.textContent = pickedColor;
 
+// Reset Button
 resetButton.addEventListener("click", function(){
 	// regenerate new colors
 	colors = generateRandomColor(numSquares);
